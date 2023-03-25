@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:online_bag_shop/constants.dart';
 import 'package:online_bag_shop/model/product.dart';
+import 'package:online_bag_shop/screens/details/details_screen.dart';
 import 'package:online_bag_shop/screens/home/components/categories.dart';
 import 'package:online_bag_shop/screens/home/components/item_card.dart';
 
@@ -36,7 +37,11 @@ class Body extends StatelessWidget {
               ),
               itemBuilder: (context, index) => ItemCard(
                 product: products[index],
-                press: () {},
+                press: () => Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => DetailsScreen(
+                    product: products[index],
+                  ),
+                )),
               ),
             ),
           ),
