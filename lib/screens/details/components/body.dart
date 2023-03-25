@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:online_bag_shop/constants.dart';
 import 'package:online_bag_shop/model/product.dart';
 import 'package:online_bag_shop/screens/details/components/add_to_cart.dart';
-import 'package:online_bag_shop/screens/details/components/cart_counter.dart';
 import 'package:online_bag_shop/screens/details/components/color_and_size.dart';
 import 'package:online_bag_shop/screens/details/components/counter_with_favbtn.dart';
 import 'package:online_bag_shop/screens/details/components/description.dart';
