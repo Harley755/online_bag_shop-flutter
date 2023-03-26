@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:online_bag_shop/constants.dart';
 import 'package:online_bag_shop/model/product.dart';
+import 'package:online_bag_shop/provider/product_provider.dart';
+import 'package:online_bag_shop/utils.dart';
+import 'package:provider/provider.dart';
 
-class AddToCart extends StatelessWidget {
+class AddToCart extends StatefulWidget {
   const AddToCart({
     Key? key,
     required this.product,
@@ -12,7 +15,14 @@ class AddToCart extends StatelessWidget {
   final Product product;
 
   @override
+  State<AddToCart> createState() => _AddToCartState();
+}
+
+class _AddToCartState extends State<AddToCart> {
+  @override
   Widget build(BuildContext context) {
+    final myCart = context.read<ProductProvider>().getCart;
+
     return Padding(
       padding: const EdgeInsets.symmetric(
         vertical: kDefaultPaddin,
@@ -27,13 +37,27 @@ class AddToCart extends StatelessWidget {
             width: 58.0,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(18.0),
-              border: Border.all(color: product.color),
+              border: Border.all(color: widget.product.color),
             ),
             child: IconButton(
-              onPressed: () {},
+              onPressed: () {
+                if (!myCart.contains(widget.product)) {
+                  context.read<ProductProvider>().addToCart(widget.product);
+                  // showSnackBar(
+                  //   const Color(0xFF198754),
+                  //   'Product added !',
+                  //   const Color(0xFF198754),
+                  //   const Color(0xFFFFFFFF),
+                  //   context,
+                  // );
+                  showSnackBar(context: context, isAdded: false);
+                } else {
+                  showSnackBar(context: context, isAdded: true);
+                }
+              },
               icon: SvgPicture.asset(
                 'assets/icons/add_to_cart.svg',
-                color: product.color,
+                color: widget.product.color,
               ),
             ),
           ),
@@ -42,7 +66,7 @@ class AddToCart extends StatelessWidget {
               height: 50.0,
               child: TextButton(
                 style: TextButton.styleFrom(
-                  backgroundColor: product.color,
+                  backgroundColor: widget.product.color,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(18.0),
                   ),

@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:online_bag_shop/constants.dart';
-import 'package:online_bag_shop/model/product.dart';
+import 'package:online_bag_shop/provider/product_provider.dart';
 import 'package:online_bag_shop/screens/details/details_screen.dart';
 import 'package:online_bag_shop/screens/home/components/categories.dart';
 import 'package:online_bag_shop/screens/home/components/item_card.dart';
+import 'package:provider/provider.dart';
 
 class Body extends StatelessWidget {
   const Body({super.key});
 
   @override
   Widget build(BuildContext context) {
+    var myAllProducts = context.watch<ProductProvider>().myAllProducts;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -28,7 +30,7 @@ class Body extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: kDefaultPaddin),
             child: GridView.builder(
-              itemCount: products.length,
+              itemCount: myAllProducts.length,
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
                 childAspectRatio: .75,
@@ -36,10 +38,10 @@ class Body extends StatelessWidget {
                 crossAxisSpacing: kDefaultPaddin,
               ),
               itemBuilder: (context, index) => ItemCard(
-                product: products[index],
+                product: myAllProducts[index],
                 press: () => Navigator.of(context).push(MaterialPageRoute(
                   builder: (context) => DetailsScreen(
-                    product: products[index],
+                    product: myAllProducts[index],
                   ),
                 )),
               ),

@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:online_bag_shop/constants.dart';
+import 'package:online_bag_shop/provider/product_provider.dart';
 import 'package:online_bag_shop/screens/home/home_screen.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(ChangeNotifierProvider(
+    create: (_) => ProductProvider(),
+    child: const MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
