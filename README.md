@@ -3,20 +3,20 @@
 <div>
 
   <a href="#">
-    <img width="300"
+    <img width="400"
       alt="Home Screen"
       src="https://github.com/Harley755/online_bag_shop-flutter/blob/master/assets/screenshots/screenshot_1.png"
     />
   </a>
  
   <a href="#" >
-    <img width="300"
+    <img width="400"
       alt="Detail Screen"
       src="https://github.com/Harley755/online_bag_shop-flutter/blob/master/assets/screenshots/screenshot_2.png"
     />
   </a>
   <a href="#" >
-    <img width="300"
+    <img width="400"
       alt="Cart Screen"
       src="https://github.com/Harley755/online_bag_shop-flutter/blob/master/assets/screenshots/screenshot_3.png"
     />
