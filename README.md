@@ -4,7 +4,7 @@
 
 # Online Bag Shop
 
-A new Flutter project.
+![UI](https://github.com/Harley755/online_bag_shop-flutter/blob/master/assets/screenshots/screenshot_1.png)
 
 ## Getting Started
 
