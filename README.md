@@ -34,15 +34,14 @@
  
 </div>
 
-
-<!-- 
-![UI](https://github.com/Harley755/online_bag_shop-flutter/blob/master/assets/screenshots/screenshot_1.png)
-![UI](https://github.com/Harley755/online_bag_shop-flutter/blob/master/assets/screenshots/screenshot_2.png) -->
-
-
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Run these commands : 
+```
+git clone https://github.com/Harley755/online_bag_shop-flutter.git
+cd online_bag_shop-flutter
+flutter pub get
+```
 
 A few resources to get you started if this is your first Flutter project:
 
