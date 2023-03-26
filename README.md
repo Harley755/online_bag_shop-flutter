@@ -15,6 +15,12 @@
       src="https://github.com/Harley755/online_bag_shop-flutter/blob/master/assets/screenshots/screenshot_2.png"
     />
   </a>
+  <a href="#" >
+    <img width="300"
+      alt="Cart Screen"
+      src="https://github.com/Harley755/online_bag_shop-flutter/blob/master/assets/screenshots/screenshot_3.png"
+    />
+  </a>
  
 </div>
 
