@@ -1,12 +1,27 @@
-
-
-
-
 # Online Bag Shop
 
+<div>
 
+  <a href="#">
+    <img 
+      alt="Home Screen"
+      src="https://github.com/Harley755/online_bag_shop-flutter/blob/master/assets/screenshots/screenshot_1.png"
+    />
+  </a>
+ 
+  <a href="#" >
+    <img width="100"
+      alt="Detail Screen"
+      src="https://github.com/Harley755/online_bag_shop-flutter/blob/master/assets/screenshots/screenshot_2.png"
+    />
+  </a>
+ 
+</div>
+
+
+<!-- 
 ![UI](https://github.com/Harley755/online_bag_shop-flutter/blob/master/assets/screenshots/screenshot_1.png)
-![UI](https://github.com/Harley755/online_bag_shop-flutter/blob/master/assets/screenshots/screenshot_2.png)
+![UI](https://github.com/Harley755/online_bag_shop-flutter/blob/master/assets/screenshots/screenshot_2.png) -->
 
 
 ## Getting Started
