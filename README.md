@@ -20,8 +20,15 @@
   <a href="#" >
     <img width="200"
     heigth="500"
-      alt="Cart Screen"
+      alt="Detail Screen • Product added"
       src="https://github.com/Harley755/online_bag_shop-flutter/blob/master/assets/screenshots/screenshot_3.png"
+    />
+  </a>
+  <a href="#" >
+    <img width="200"
+    heigth="500"
+      alt="Cart Screen"
+      src="https://github.com/Harley755/online_bag_shop-flutter/blob/master/assets/screenshots/screenshot_4.png"
     />
   </a>
  
