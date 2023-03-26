@@ -3,14 +3,14 @@
 <div>
 
   <a href="#">
-    <img 
+    <img width="300"
       alt="Home Screen"
       src="https://github.com/Harley755/online_bag_shop-flutter/blob/master/assets/screenshots/screenshot_1.png"
     />
   </a>
  
   <a href="#" >
-    <img width="100"
+    <img width="300"
       alt="Detail Screen"
       src="https://github.com/Harley755/online_bag_shop-flutter/blob/master/assets/screenshots/screenshot_2.png"
     />
