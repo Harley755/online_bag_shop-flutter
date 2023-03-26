@@ -4,10 +4,10 @@
 
 # Online Bag Shop
 
-    <img 
-      alt="Apprendre React"
-      src="https://github.com/Harley755/online_bag_shop-flutter/blob/master/assets/screenshots/screenshot_1.png"
-    />
+
+![UI](https://github.com/Harley755/online_bag_shop-flutter/blob/master/assets/screenshots/screenshot_1.png)
+![UI](https://github.com/Harley755/online_bag_shop-flutter/blob/master/assets/screenshots/screenshot_2.png)
+
 
 ## Getting Started
 
